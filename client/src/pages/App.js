@@ -1,13 +1,13 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import axios from 'axios';
-import './App.css';
+import '../styles/App.css';
 
 function App() {
   const [mensaje, setMensaje] = useState('');
 
   const obtenerHolaMundo = async () => {
     try {
-      const respuesta = await axios.get('http://localhost:3000/api/holamundo');
+      const respuesta = await axios.get('http://localhost:3001/api/holamundo');
       setMensaje(respuesta.data.mensaje);
     } catch (error) {
       console.error('Error al obtener la informacion del backend:', error);
@@ -25,4 +25,3 @@ function App() {
 }
 
 export default App;
-
