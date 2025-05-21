@@ -1,0 +1,18 @@
+.button {
+  background-color: #bd8f4a;
+  padding: 12px 24px;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #ec9a00;
+}
+
+.message {
+  font-size: 18px;
+  color: #9c3939;
+  margin-top: 20px;
+}
